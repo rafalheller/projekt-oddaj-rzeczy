@@ -1,0 +1,46 @@
+
+#header {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+
+  .picture {
+    background-image: url("./../images/rocknwool.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 100%
+  }
+}
+
+.main-nav {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0.7rem;
+    margin: 0 1rem;
+
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    &:hover {
+      border: 1px solid black;
+    }
+
+
+    a {
+      text-decoration: none;
+      color: #3c3c3c;
+      font-size: 1rem;
+    }
+  }
+}
