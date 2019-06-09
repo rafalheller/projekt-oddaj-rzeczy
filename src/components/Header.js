@@ -1,23 +1,21 @@
 import React, {Component} from 'react';
-import Minimenu from "./Minimenu";
+import Menu from './Menu'
+import Title from './Title'
+import Rectangles from './Rectangles'
+
+// import Minimenu from "./Minimenu";
+
 
 class Header extends Component {
     render() {
         return (
 
+
             <header id='header'>
-                <div className="header-container">
-                    {/*MENU================*/}
-                    <ul className='clearfix'>
-                        <li className='button'><a href="#">Start</a></li>
-                        <li className='button'><a href="#">O co chodzi?</a></li>
-                        <li className='button'><a href="#">O nas</a></li>
-                        <li className='button'><a href="#">Fundacje i organizacje</a></li>
-                        {/*<li><Minimenu/></li>*/}
-                    </ul>
-                    {/*    MENU KONIEC*/}
-
-
+                <div className="header-container top-menu">
+                    <Menu/>
+                    <Title/>
+                    <Rectangles/>
                 </div>
             </header>
 
@@ -28,19 +26,3 @@ class Header extends Component {
 
 export default Header;
 
-
-{/*    <div className="title">*/
-}
-{/*        <h1>Oddaj rzeczy, których już nie chcesz</h1>*/
-}
-{/*        <p className="upper">potrzebującym</p>*/
-}
-{/*        <div className="decoration"></div>*/
-}
-{/*        <p>Wystarczą cztery proste kroki</p>*/
-}
-{/*    </div>*/
-}
-
-{/*</nav>*/
-}
