@@ -110,6 +110,16 @@ $main-color: #3c3c3c;
 //  }
 //}
 
+@mixin decoration {
+
+  background-image: url("./../images/decoration-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 33px;
+  margin: 1rem 0;
+
+}
+
 #header {
   width: 100%;
   height: 80vh;
@@ -185,11 +195,8 @@ $main-color: #3c3c3c;
   }
 
   .decoration {
-    background-image: url("./../images/decoration-1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 33px;
-    margin: 1rem 0;
+
+    @include decoration
   }
 
 }
@@ -223,7 +230,7 @@ $main-color: #3c3c3c;
   background-image: url("./../images/Bg.png");
   background-size: contain;
   display: flex;
-  justify-content:space-around ;
+  justify-content: space-around;
   align-items: center;
 
   .column {
@@ -254,5 +261,61 @@ $main-color: #3c3c3c;
       //margin: 0 auto;
 
     }
+  }
+}
+
+#register {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  p {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .steps-container {
+    display: flex;
+    width: 62%;
+    height: 30vh;
+    background-color: #ebebeb;
+    margin: 0 auto;
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      padding: 3rem 6rem;
+      width: 25%;
+      height: 100%;
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+
+  }
+
+  button {
+    display: block;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid $main-color;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 3.6rem;
+    padding: 2rem 2.5rem;
   }
 }
