@@ -26,26 +26,15 @@ class Header extends Component {
                             <li>Kontakt</li>
                         </ul>
                     </nav>
-
-
+                    <div className="title">
+                        <h1>Zacznij pomagać!
+                            Oddaj niechciane rzeczy w zaufane ręce</h1>
+                        <div className="decoration"></div>
+                    </div>
+                    <div className='big-button'><p>oddaj</p> <p>rzeczy</p></div>
+                    <div className='big-button'><p>zorganizuj</p><p>zbiórkę</p></div>
 
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                 {/*<div className="header-container top-menu">*/}

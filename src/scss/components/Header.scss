@@ -117,14 +117,16 @@ $main-color: #3c3c3c;
   background-image: url("./../images/header_start_img.jpg");
   background-repeat: no-repeat;
 
+
   .top-menu-wrapper {
 
     width: 35vw;
     margin-right: 7vw;
+    margin-top: 55px;
     height: 80vh;
     position: absolute;
     right: 0;
-    border: 1px solid black;
+    //border: 1px solid gray;
 
     ul.log {
       display: flex;
@@ -152,6 +154,62 @@ $main-color: #3c3c3c;
 
     li {
       display: inline-block;
+      padding: 1.2rem;
+      font-size: 1.8rem;
+
+      &.start {
+        position: absolute;
+        left: -10rem;
+        border: 1px solid $main-color;
+        padding: 1.2rem 2.5rem;
+      }
     }
   }
+}
+
+.title {
+
+  width: 100%;
+  //margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //border: 1px solid lightgreen;
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 5.5rem;
+    font-weight: 400;
+  }
+
+  .decoration {
+    background-image: url("./../images/decoration-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 33px;
+    margin: 1rem 0;
+  }
+
+}
+
+.big-button {
+  border: 1px solid $main-color;
+  text-transform: uppercase;
+  width: 40%;
+  text-align: center;
+  margin: 4rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  &:last-of-type {
+    right: 0;
+  }
+
+  p {
+    font-size: 3.6rem;
+  }
+
 }
