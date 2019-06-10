@@ -12,11 +12,47 @@ class Header extends Component {
 
 
             <header id='header'>
-                <div className="header-container top-menu">
-                    <Menu/>
-                    <Title/>
-                    <Rectangles/>
+                <div className="top-menu-wrapper">
+                    <ul className='log'>
+                        <li>Zaloguj</li>
+                        <li className='sign-in'>Załóż konto</li>
+                    </ul>
+                    <nav className="nav">
+                        <ul>
+                            <li className='start'>Start</li>
+                            <li>O co chodzi ?</li>
+                            <li>O nas</li>
+                            <li>Fundacje i organizacje</li>
+                            <li>Kontakt</li>
+                        </ul>
+                    </nav>
+
+
+
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/*<div className="header-container top-menu">*/}
+                {/*    <Menu/>*/}
+                {/*    <Title/>*/}
+                {/*    <Rectangles/>*/}
+                {/*</div>*/}
             </header>
 
 
