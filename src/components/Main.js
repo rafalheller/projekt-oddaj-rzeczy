@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import facebook from "./../images/1447355328_06-facebook.png";
 import instagram from './../images/1447355379_Instagram.png';
+import { animateScroll as scroll } from "react-scroll";
 
 class Main extends Component {
+
     render() {
         return (
             <>
-                <div id='thanks' className='thanks-section'>
+                <div id='thanks' className='thanks-section contact-scroll'>
 
                     <p className='thanks-text'>Dziękujemy za przesłanie formularza
                         Na maila prześlemy wszelkie
@@ -41,7 +43,9 @@ class Main extends Component {
                         <p>Copyright &copy; by Anna Dadej </p>
                         <div className='social-media'><img src={facebook} alt="facebook"/></div>
                         <div className="social-media"><img src={instagram} alt=""/></div>
+
                     </footer>
+
                 </section>
 
 

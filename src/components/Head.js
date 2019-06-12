@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
+import { Link } from 'react-scroll'
 
 class Head extends Component {
+
     render() {
         return (
             <header id='header'>
@@ -10,13 +12,68 @@ class Head extends Component {
                         <li className='sign-in'>Załóż konto</li>
                     </ul>
                     <nav className="nav">
-                        <ul>
-                            <li className='start'>Start</li>
-                            <li>O co chodzi ?</li>
-                            <li>O nas</li>
-                            <li>Fundacje i organizacje</li>
-                            <li>Kontakt</li>
-                        </ul>
+
+                            {/*<li className='start'>Start</li>*/}
+                            <Link
+                                activeClass="active"
+                                to="main-scroll"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration= {500}
+                                delay={200}
+                                className="nav-list start"
+
+                            >Start</Link>
+                            {/*<li>O co chodzi ?</li>*/}
+                            <Link
+                                activeClass="active"
+                                to="whatIsThis-scroll"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration= {500}
+                                delay={200}
+                                className="nav-list"
+
+
+                            >O co chodzi?</Link>
+                            {/*<li>O nas</li>*/}
+                            <Link
+                                activeClass="active"
+                                to="about-scroll"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration= {500}
+                                delay={200}
+                                className="nav-list"
+
+                            >O nas</Link>
+                            {/*<li>Fundacje i organizacje</li>*/}
+                            <Link
+                                activeClass="active"
+                                to="foundations-scroll"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration= {500}
+                                delay={200}
+                                className="nav-list"
+
+                            >Fundacje i organizacje</Link>
+                            {/*<li>Kontakt</li>*/}
+                            <Link
+                                activeClass="active"
+                                to="contact-scroll"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration= {500}
+                                delay={200}
+                                className="nav-list"
+
+                            >Kontakt</Link>
                     </nav>
                     <div className="title">
                         <h1>Zacznij pomagać!

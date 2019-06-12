@@ -4,7 +4,7 @@ import signature from "../images/Signature.png";
 class About extends Component {
     render() {
         return (
-            <section id="about">
+            <section id="about" className='about-scroll'>
                 <div className='about-description'>
                     <h3>O nas <div className="decoration"></div></h3>
 

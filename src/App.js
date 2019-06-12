@@ -8,15 +8,11 @@ import Stats from "./components/Stats";
 import Register from "./components/Register";
 import About from "./components/About";
 import Help from "./components/Help";
-
-
-import * as Scroll from 'react-scroll';
-import {Link, Element, Events, animateScroll as scroll, scrollSpy, scroller} from 'react-scroll'
-
-
+import ScrollTopButton from './components/ScrollTopButton'
 
 
 function App() {
+
 
 
     return (
@@ -29,6 +25,8 @@ function App() {
             <Help/>
             {/*<Header />*/}
             <Main/>
+            <ScrollTopButton/>
+            {/*<div className="scroll-top social-media" onClick={this.scrollToTop}>TOP</div>*/}
 
         </div>
     );

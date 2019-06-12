@@ -7,7 +7,7 @@ import courier from "../images/58.png";
 class Register extends Component {
     render() {
         return (
-            <main id='register'>
+            <main id='register' className='whatIsThis-scroll'>
                 <p>Wystarczą 4 proste kroki</p>
                 <div className="decoration"></div>
                 <div className="steps-container">

@@ -1,12 +1,28 @@
 import React, {Component} from 'react';
+import Pagination from "react-js-pagination";
 
 class Help extends Component {
+
+    getData = () => {
+        fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(response => response.json())
+            .then(json => console.log(json[7].title))
+            .then(json=> <div>{json}</div>)
+    }
+
+    componentDidMount() {
+        this.getData()
+    }
+
     render() {
+
+
         return (
-            <section id="menu-help">
+            <section id="menu-help" className='foundations-scroll'>
                 <div className="menu-title">
-                    <h2>Komu pomagamy?
-                        <div className="decoration"></div></h2>
+                    <h2 onClick={this.getData}>Komu pomagamy?
+                        <div className="decoration"></div>
+                    </h2>
                     <div className="buttons">
                         <div className="button">
                             <p>Fundacjom</p>
@@ -28,6 +44,7 @@ class Help extends Component {
                 </div>
 
                 <ul className='foundation-list '>
+
                     <li className='foundation-item'>
                         <h3 name="dbam o zdrowie" className="foundation-name">Fundacja: Lorem ipsum.</h3>
                         <p>Cel i misja: Lorem ipsum dolor sit amet.</p>
