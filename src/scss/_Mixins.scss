@@ -1,0 +1,13 @@
+
+$main-color: #3c3c3c;
+$desktop-1640: "max-width: 1640px";
+
+
+@mixin decoration {
+
+  background-image: url("./../images/decoration-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 33px;
+  margin: 1rem 0;
+}

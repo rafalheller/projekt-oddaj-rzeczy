@@ -1,3 +1,4 @@
+@import "Mixins";
 html {
   font-size: 10px;
 }
@@ -9,6 +10,6 @@ html {
   color: $main-color
 }
 
-.wrapper {
-  max-width: 1900px;
-}
+//.wrapper {
+//  max-width: 1900px;
+//}

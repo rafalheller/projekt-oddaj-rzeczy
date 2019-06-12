@@ -23,6 +23,7 @@ class Main extends Component {
                             <div className="decoration"></div></h1>
                         <p>formularz kontaktowy</p>
                         <form action="submit">
+                            <label>
                             <div className="input-wrapper">
                                 <input type="text" value="imię"/>
                                 <input type="email" value='Email'/>
@@ -30,8 +31,9 @@ class Main extends Component {
                             <input className='message' type="text" value="Wiadomość"/>
                             <input className='button' type="submit" value="Wyślij"/>
 
-
+                            </label>
                         </form>
+
 
                     </div>
 
