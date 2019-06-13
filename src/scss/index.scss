@@ -1,10 +1,15 @@
-body {
-  margin:0;
+@import "Mixins";
+html {
+  font-size: 10px;
+}
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', 'Arial', "SansSerif";
+  color: $main-color
 }
-//.container {
-//  max-width: 1400px;
-//  margin: 0 auto;
+
+//.wrapper {
+//  max-width: 1900px;
 //}

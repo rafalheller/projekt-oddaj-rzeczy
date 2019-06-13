@@ -1,0 +1,135 @@
+//@import "Header";
+
+#header {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background-image: url("./../images/header_start_img.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+  .top-menu-wrapper {
+
+    width: 35vw;
+    margin-right: 7vw;
+    margin-top: 55px;
+    //height: 80%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    //border: 1px solid gray;
+
+    ul.log {
+      display: flex;
+      justify-content: flex-end;
+
+      right: 0;
+      font-size: 1.4rem;
+      list-style: none;
+
+      li {
+
+        padding: 1.4rem;
+        @media (max-width: 1366px) {
+          font-size: 1.2rem;
+        }
+
+        &.sign-in {
+          border: 1px solid #fad64b;
+
+        }
+
+      }
+    }
+  }
+}
+
+.nav {
+
+  .nav-list {
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    @media (max-width: 1366px) {
+      font-size: 1.5rem;
+    }
+
+    &.start {
+      position: absolute;
+      left: -10rem;
+      border: 1px solid $main-color;
+      padding: 1.2rem 2.5rem;
+
+
+
+    }
+    &:hover {
+     color: lighten($main-color, 50%);
+    }
+  }
+}
+
+
+.title {
+
+  width: 100%;
+  margin: 3rem auto;
+
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+    //line-height: 5.5rem;
+    font-weight: 400;
+    @media (max-width: 1366px) {
+      font-size: 2.5rem;
+    }
+    //@media ($desktop-1640) {
+    //  font-size: 3rem;
+    //}
+  }
+
+  .decoration {
+
+    @include decoration
+  }
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+  .big-button {
+    border: 1px solid $main-color;
+    text-transform: uppercase;
+    //overflow: hidden;
+    width: 40%;
+    text-align: center;
+    //margin: 4rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    //position: absolute;
+    //bottom: 10%;
+    //margin: 1rem;
+
+
+    &:last-of-type {
+      right: 0;
+    }
+
+    p {
+      font-size: 3.6rem;
+      @media($desktop-1640) {
+        font-size: 3rem;
+        @media (max-width: 1366px) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
