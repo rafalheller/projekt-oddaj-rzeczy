@@ -18,6 +18,7 @@ class Header extends Component {
 
                 </div>
                 {/*<Login/>*/}
+                <div>a</div>
             </header>
 
         );

@@ -39,7 +39,7 @@ function App() {
             {/*<Login/>*/}
             <ScrollTopButton/>
             <LoginPage/>
-            {/*<div className="scroll-top social-media" onClick={this.scrollToTop}>TOP</div>*/}
+
 
         </div>
     );

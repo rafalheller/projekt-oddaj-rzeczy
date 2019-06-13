@@ -2,7 +2,7 @@
 
 #header {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   background-image: url("./../images/header_start_img.jpg");
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
       li {
 
         padding: 1.4rem;
-        @media (max-width: 1366px) {
+        @media (max-width: 1400px) {
           font-size: 1.2rem;
         }
 
@@ -110,7 +110,7 @@
     //overflow: hidden;
     width: 40%;
     text-align: center;
-    //margin: 4rem;
+    margin-top: 3rem;
     padding: 1rem 2rem;
     display: inline-block;
     //position: absolute;
