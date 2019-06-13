@@ -3,13 +3,22 @@ import Main from './components/Main'
 
 import './scss/main.scss';
 import Minimenu from "./components/Minimenu";
-import Head from "./components/Head";
+import Header from "./components/Header/Header";
 import Stats from "./components/Stats";
 import Register from "./components/Register";
 import About from "./components/About";
 import Help from "./components/Help";
 import ScrollTopButton from './components/ScrollTopButton'
+import Login from "./components/LoginForm/Login";
 
+import {
+    HashRouter,
+    Route,
+    Link,
+    Switch,
+    NavLink,
+} from 'react-router-dom';
+import LoginPage from "./components/LoginForm/LoginPage";
 
 function App() {
 
@@ -18,14 +27,18 @@ function App() {
     return (
         <div className="App wrapper">
             {/*<Minimenu name="zenek"/>*/}
-            <Head />
+            <Header />
             <Stats/>
             <Register/>
-            <About/>
+            {/*<About/>*/}
+            <Route exact path='/' component={About} />
             <Help/>
-            {/*<Header />*/}
+
             <Main/>
+            <Route path='/login' component={Login} />
+            {/*<Login/>*/}
             <ScrollTopButton/>
+            <LoginPage/>
             {/*<div className="scroll-top social-media" onClick={this.scrollToTop}>TOP</div>*/}
 
         </div>
