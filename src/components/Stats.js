@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Stat from "./Stat";
 
 const randNum1 = Math.floor(Math.random() * 17)
 const randNum2 = Math.floor(Math.random() * 10)
 const randNum3 = Math.floor(Math.random() * 21)
 
-class Stats extends Component {
-    render() {
+const Stats = () => {
+    {
         return (
             <section id='stats'>
                 <Stat counter={randNum1} title="Oddanych worków"/>
