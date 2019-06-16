@@ -3,7 +3,7 @@ import Nav from './Nav'
 import LogAndRegister from "./LogAndRegister";
 import HelpDescription from './HelpDescription'
 import Buttons from './Buttons'
-import Login from "../LoginForm/Login";
+import Login from "../Login&RegisterForms/Login";
 
 class Header extends Component {
 
@@ -16,9 +16,9 @@ class Header extends Component {
                     <HelpDescription />
                     <Buttons/>
 
+
                 </div>
                 {/*<Login/>*/}
-                <div>a</div>
             </header>
 
         );

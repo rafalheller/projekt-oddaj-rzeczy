@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {NavLink} from "react-router-dom";
 
 class Login extends Component {
     render() {
@@ -16,7 +17,7 @@ class Login extends Component {
                 <br/>
                 <div className='buttons-container'>
                     <input type="submit" value='Zaloguj się'/>
-                    <input type="submit" value='Załóż konto'/>
+                    <NavLink to='/register'>Załóż konto</NavLink>
                 </div>
             </form>
 

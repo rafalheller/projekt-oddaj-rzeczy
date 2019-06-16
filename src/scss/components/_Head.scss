@@ -48,27 +48,32 @@
 }
 
 .nav {
+  ul {
+    li {
+      display: inline-block;
 
-  .nav-list {
-    display: inline-block;
-    padding: 1.2rem;
-    font-size: 1.8rem;
-    cursor: pointer;
-    @media (max-width: 1366px) {
-      font-size: 1.5rem;
-    }
+      .nav-list {
+        //display: inline-block;
+        padding: 1.2rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+        @media (max-width: 1366px) {
+          font-size: 1.5rem;
+        }
 
-    &.start {
-      position: absolute;
-      left: -10rem;
-      border: 1px solid $main-color;
-      padding: 1.2rem 2.5rem;
+        &.start {
+          position: absolute;
+          left: -10rem;
+          border: 1px solid $main-color;
+          padding: 1.2rem 2.5rem;
 
 
+        }
 
-    }
-    &:hover {
-     color: lighten($main-color, 50%);
+        &:hover {
+          color: lighten($main-color, 50%);
+        }
+      }
     }
   }
 }
@@ -133,3 +138,4 @@
     }
   }
 }
+
