@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Pagination from "react-js-pagination";
+import HelpBtn from "./HelpBtn";
+import { Pagination } from 'react-bootstrap';
 
 const style = {
     fontWeight: 900
@@ -8,15 +9,18 @@ const style = {
 class Help extends Component {
     state = {
         data: [],
+        organizations: ["foundations", "organizations","local"]
     }
 
     getData = () => {
-        fetch('http://localhost:5555/foundations/')
+        fetch(`http://localhost:5555/${this.state.organizations}/?_page=1&_limit=3`)
             .then(response => response.json())
             .then(json => this.setState({
                 data: json
             }))
     }
+
+
 
     componentDidMount() {
         this.getData();
@@ -34,23 +38,15 @@ class Help extends Component {
                 <h2 onClick={this.getData}>Komu pomagamy?
                     <div className="decoration"></div>
                 </h2>
+
                 <div className="buttons">
-                    <div className="button">
-                        <p>Fundacjom</p>
-                    </div>
-                    <div className="button">
-                        <p>Organizacjom pozarządowym</p>
-                    </div>
-                    <div className="button">
-                        <p>Lokalnym zbiórkom</p>
-                    </div>
+                  <HelpBtn name={'Fundacjom'}/>
+                  <HelpBtn name={'Organizacjom pozarządowym'}/>
+                  <HelpBtn name={'Lokalnym zbiórkom'}/>
                 </div>
-
-
                 <p className='description'>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z
                     którymi współpracujemy.
                     Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
-
                 </p>
             </div>
 
@@ -63,6 +59,16 @@ class Help extends Component {
                 <div className="page">2</div>
                 <div className="page">3</div>
             </div>
+            {/*<Pagination*/}
+            {/*    className={'ok'}*/}
+            {/*    bsSize="medium"*/}
+            {/*    items={10}*/}
+            {/*    activePage={1}>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">Previous</a></li>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">1</a></li>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">2</a></li>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">3</a></li>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">Next</a></li></Pagination>*/}
 
 
         </section>;
