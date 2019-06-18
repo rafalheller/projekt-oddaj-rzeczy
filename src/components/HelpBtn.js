@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const HelpBtn = (props) => {
-    return (
-        <div className="button">
-            <p>{props.name}</p>
-        </div>
-    );
-};
+class HelpBtn extends Component {
+
+    render() {
+        return (
+            <div className="button">
+                <p>{this.props.name}</p>
+            </div>
+        );
+    }
+}
 
 export default HelpBtn;

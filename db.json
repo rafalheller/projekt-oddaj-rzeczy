@@ -41,6 +41,11 @@
       "description": "lorem 1",
       "items": ["ubrania","zabawki","przybory szkolne"]
     }
-  ]
+  ], "organizations": {
+  "id": 9,
+  "name": "aaaaaaaaa",
+  "description": "bbbbbbbbbb",
+  "items": ["ccccccccccccccc","zabawki","przybory szkolne"]
+}
 
 }

@@ -8,6 +8,9 @@ import Main from "../components/Main";
 import Login from "../components/Login&RegisterForms/Login";
 import ScrollTopButton from "../components/ScrollTopButton";
 import LoginPage from "./LoginPage";
+import Footer from "../components/Footer";
+import ThanksForForm from "../components/ThanksForForm";
+import ContactForm from "../components/ContactForm";
 
 class MainPage extends Component {
     render() {
@@ -18,9 +21,12 @@ class MainPage extends Component {
                 <Register/>
                 <About/>
                 <Help/>
-                <Main/>
+                <ContactForm/>
+                <ThanksForForm/>
+
                 {/*<Login/>*/}
                 <ScrollTopButton/>
+                <Footer/>
                 {/*<LoginPage/>*/}
             </>
         );

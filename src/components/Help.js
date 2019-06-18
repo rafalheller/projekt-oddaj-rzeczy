@@ -9,14 +9,22 @@ const style = {
 class Help extends Component {
     state = {
         data: [],
-        organizations: ["foundations", "organizations","local"]
+        organizations: 'foundations'
     }
+    // handleClick = () => {
+    //     this.setState({
+    //         organizations: "organizations",
+    //
+    //     })
+    // }
+
 
     getData = () => {
         fetch(`http://localhost:5555/${this.state.organizations}/?_page=1&_limit=3`)
             .then(response => response.json())
             .then(json => this.setState({
-                data: json
+                data: json,
+                // organizations: this.props.profil
             }))
     }
 
@@ -25,6 +33,7 @@ class Help extends Component {
     componentDidMount() {
         this.getData();
     }
+
 
     render() {
         const list = this.state.data.map(item => (<li key={item.id} className='foundation-item'>
@@ -35,14 +44,15 @@ class Help extends Component {
 
         return <section id="menu-help" className='foundations-scroll'>
             <div className="menu-title">
-                <h2 onClick={this.getData}>Komu pomagamy?
+                <h2>Komu pomagamy?
                     <div className="decoration"></div>
                 </h2>
 
                 <div className="buttons">
-                  <HelpBtn name={'Fundacjom'}/>
-                  <HelpBtn name={'Organizacjom pozarządowym'}/>
-                  <HelpBtn name={'Lokalnym zbiórkom'}/>
+                  <HelpBtn  name={'Fundacjom'} profil={'foundations'}/>
+                  {/*<button onClick={this.handleClick} profil="foundatiodns">ok</button>*/}
+                  <HelpBtn name={'Organizacjom pozarządowym'} profil={'organizations'}/>
+                  <HelpBtn name={'Lokalnym zbiórkom'} profil={'local'}/>
                 </div>
                 <p className='description'>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z
                     którymi współpracujemy.
