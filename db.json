@@ -4,48 +4,129 @@
       "id": 1,
       "name": "Iskierka",
       "description": "Good news, everyone! I've taught the toaster to feel love! But existing is basically all I do!",
-      "items": ["ubrania","zabawki","przybory szkolne"]
-    }, {
+      "items": [
+        "ubrania",
+        "zabawki",
+        "przybory szkolne"
+      ]
+    },
+    {
       "id": 2,
       "name": "Podkarpackie Hospicjum dla Dzieci",
       "description": "Throw her in the brig. You are the last hope of the universe.",
-      "items": ["ubrania","ołówki","kredki"]
-    }, {
+      "items": [
+        "ubrania",
+        "ołówki",
+        "kredki"
+      ]
+    },
+    {
       "id": 3,
       "name": "Fundacja Onkologiczna Osób Młodych\n",
       "description": "Tell her she looks thin. For example, if you killed your grandfather, you'd cease to exist!",
-      "items": ["ubrania","zabawki","przybory szkolne"]
-    }, {
+      "items": [
+        "ubrania",
+        "zabawki",
+        "przybory szkolne"
+      ]
+    },
+    {
       "id": 4,
       "name": "Europejska Fundacja Ludzi Dobrej Woli 'Serdeczna Pomoc'",
       "description": "There's one way and only one way to determine if an animal is intelligent",
-      "items": ["ubrania","zabawki","przybory szkolne"]
-    }, {
+      "items": [
+        "ubrania",
+        "zabawki",
+        "przybory szkolne"
+      ]
+    },
+    {
       "id": 5,
       "name": "Iskierka",
       "description": "Dissect its brain! File not found.",
-      "items": ["ubrania","zabawki","przybory szkolne"]
-    }, {
+      "items": [
+        "ubrania",
+        "zabawki",
+        "przybory szkolne"
+      ]
+    },
+    {
       "id": 6,
       "name": "Iskierka",
       "description": "lorem 1",
-      "items": ["ubrania","zabawki","przybory szkolne"]
-    }, {
+      "items": [
+        "ubrania",
+        "zabawki",
+        "przybory szkolne"
+      ]
+    },
+    {
       "id": 7,
       "name": "Iskierka",
       "description": "lorem 1",
-      "items": ["ubrania","zabawki","przybory szkolne"]
-    }, {
+      "items": [
+        "ubrania",
+        "zabawki",
+        "przybory szkolne"
+      ]
+    },
+    {
       "id": 8,
       "name": "Iskierka",
       "description": "lorem 1",
-      "items": ["ubrania","zabawki","przybory szkolne"]
+      "items": [
+        "ubrania",
+        "zabawki",
+        "przybory szkolne"
+      ]
     }
-  ], "organizations": {
-  "id": 9,
-  "name": "aaaaaaaaa",
-  "description": "bbbbbbbbbb",
-  "items": ["ccccccccccccccc","zabawki","przybory szkolne"]
-}
-
+  ],
+  "organizations": [
+    {
+      "id": 1,
+      "name": "aaaaaaaaa",
+      "description": "bbbbbbbbbb",
+      "items": [
+        "ccccccccccccccc",
+        "bbb",
+        "dddd",
+        "eeeeee"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "2aaaaaaaaa",
+      "description": "3bbbbbbbbbb",
+      "items": [
+        "4ccccccccccccccc",
+        "5bbb",
+        "6dddd",
+        "6eeeeee"
+      ]
+    }
+  ],
+  "localHelp": [
+    {
+      "id": 1,
+      "name": "pomoc",
+      "description": "rtrtrt",
+      "items": [
+        "v",
+        "n",
+        "m",
+        "1"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "6662aaaaaaaaa",
+      "description": "6663bbbbbbbbbb",
+      "items": [
+        "64ccccccccccccccc",
+        "65bbb",
+        "66dddd",
+        "66eeeeee"
+      ]
+    }
+  ]
 }

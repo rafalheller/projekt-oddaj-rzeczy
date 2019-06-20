@@ -4,7 +4,7 @@ class HelpBtn extends Component {
 
     render() {
         return (
-            <div className="button">
+            <div style={this.props.style} onClick={this.props.onClick} className="button">
                 <p>{this.props.name}</p>
             </div>
         );
