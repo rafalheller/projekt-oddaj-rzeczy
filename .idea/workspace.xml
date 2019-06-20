@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="302b49bf-6e07-4792-8205-81abd55eebaa" name="Default Changelist" comment="add section form (view)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Help.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Help.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelpBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HelpBtn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Help.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-17">
@@ -81,11 +79,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ContactForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+            <state relative-caret-position="238">
+              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+              <folding>
+                <element signature="e#292#381#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,10 +191,10 @@
         <option value="$PROJECT_DIR$/src/scss/components/_Main.scss" />
         <option value="$PROJECT_DIR$/src/scss/components/ContactForm.scss" />
         <option value="$PROJECT_DIR$/src/scss/main.scss" />
-        <option value="$PROJECT_DIR$/src/components/ContactForm.js" />
         <option value="$PROJECT_DIR$/db.json" />
         <option value="$PROJECT_DIR$/src/components/HelpBtn.js" />
         <option value="$PROJECT_DIR$/src/components/Help.js" />
+        <option value="$PROJECT_DIR$/src/components/ContactForm.js" />
       </list>
     </option>
   </component>
@@ -340,7 +341,7 @@
       <workItem from="1560688487366" duration="9694000" />
       <workItem from="1560721250992" duration="11503000" />
       <workItem from="1560891767522" duration="7105000" />
-      <workItem from="1561027573600" duration="10176000" />
+      <workItem from="1561027573600" duration="17623000" />
     </task>
     <task id="LOCAL-00001" summary="create header on desktop">
       <created>1560119384266</created>
@@ -367,12 +368,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175289000" />
+    <option name="totallyTimeSpent" value="182736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19880864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19880864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -384,7 +386,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329806" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4995809" visible="true" weight="0.30864197" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4995809" weight="0.30864197" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50041914" side_tool="true" weight="0.25203252" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.329806" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -433,6 +435,12 @@
           <url>file://$PROJECT_DIR$/src/components/Stat.js</url>
           <line>2</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/ContactForm.js</url>
+          <line>81</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -810,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ContactForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HelpBtn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -833,6 +834,16 @@
             <element signature="e#420#697#0" />
             <element signature="e#824#1090#0" />
             <element signature="e#2121#2361#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ContactForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+          <folding>
+            <element signature="e#292#381#0" />
           </folding>
         </state>
       </provider>
