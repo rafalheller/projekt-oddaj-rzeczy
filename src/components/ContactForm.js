@@ -14,7 +14,7 @@ class ContactForm extends Component {
         showThanks: false
     }
     messages = {
-        username_incorrect: "Imię musi zawierać minimum 3 litery",
+        username_incorrect: "To pole nie może być puste",
         email_incorrect: "Brak @ w emailu",
         message_incorrect: "Twoja wiadomość jest pusta"
 
@@ -69,6 +69,8 @@ class ContactForm extends Component {
             })
 
             console.log('formularz wysłany')
+        // TODO    tutaj dodać FETCH() na wysłanie wiadomości do db.json
+
         } else {
             this.setState({
                 errors: {

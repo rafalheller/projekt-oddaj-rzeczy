@@ -37,6 +37,7 @@ class Help extends Component {
 
 
     getData = () => {
+        console.log("działa")
         fetch(`http://localhost:5555/${this.state.organizations}`)
             .then(response => response.json())
             .then(json => this.setState({
@@ -49,9 +50,10 @@ class Help extends Component {
         this.getData();
     }
 
-    // componentDidUpdate(prevProps, prevState, snapshot) {
-    //     this.getData()
-    // }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('update');
+
+    }
 
 
     render() {
@@ -68,12 +70,14 @@ class Help extends Component {
                     <div className="decoration"></div>
                 </h2>
 
+
                 <div className="buttons">
                     <HelpBtn
                         style={this.state.active ? {fontWeight: 900} : {fontWeight: 300}}
                         onClick={this.showFoundations}
                         name={'Fundacjom'}
-                        profil={'foundations'}/>
+                        profil={'foundations'}
+                    />
                     <HelpBtn
                         style={this.state.active ? {fontWeight: 900} : {fontWeight: 300}}
                         onClick={this.showOrganizations}
