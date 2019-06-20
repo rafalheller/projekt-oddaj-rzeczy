@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ThanksForForm from "./ThanksForForm";
 
 class ContactForm extends Component {
     state = {
@@ -9,7 +10,8 @@ class ContactForm extends Component {
             username: false,
             email: false,
             message: false
-        }
+        },
+        showThanks: false
     }
     messages = {
         username_incorrect: "Imię musi zawierać minimum 3 litery",
@@ -29,7 +31,7 @@ class ContactForm extends Component {
         if (this.state.email.indexOf('@') !== -1) {
             email = true;
         }
-        if (this.state.message.length >= 1) {
+        if (this.state.message.length !== 0) {
             message = true
 
         }
@@ -47,15 +49,14 @@ class ContactForm extends Component {
             [name]: value
         })
     }
-
     handleSubmit = (e) => {
         e.preventDefault();
         const validation = this.formValidation();
         console.log(validation)
 
-        if (validation.correct) {
+        if (validation.correct === true) {
             this.setState({
-
+                showThanks: true,
                 username: "",
                 email: "",
                 message: "",
@@ -66,60 +67,75 @@ class ContactForm extends Component {
                 }
 
             })
+
             console.log('formularz wysłany')
         } else {
             this.setState({
                 errors: {
-                    username: false,
-                    email: false,
-                    message: false
+                    username: !validation.username,
+                    email: !validation.email,
+                    message: !validation.message
                 }
             })
         }
     }
 
+    componentDidUpdate() {
+        if (this.state.showThanks === true) {
+            setTimeout(() => this.setState({
+                showThanks: false
+            }), 5000)
+        }
+    }
+
     render() {
-        return (
-            <section id='form'>
-                <div className="form-wrapper">
-                    <h1>Skontaktuj się z nami
-                        <div className="decoration"></div></h1>
-                    <p>formularz kontaktowy</p>
-                    <form onSubmit={this.handleSubmit} noValidate>
+        if (this.state.showThanks === false) {
 
-                        <div className="input-wrapper">
-                            <label htmlFor="user">
-                                <input type="text"
-                                       id='user'
-                                       value={this.state.username}
-                                       name='username'
-                                       onChange={this.handleChange}/>
-                                {this.state.errors.username ? <span>{this.messages.username_incorrect}</span> : null}
-                            </label>
-                            <label htmlFor="email">
-                                <input type="email"
-                                       value={this.state.email}
-                                       name='email'
-                                       onChange={this.handleChange}/>
-                                {this.state.errors.email ? <span>{this.messages.email_incorrect}</span> : null}
-                            </label>
-                        </div>
+            return (
+                <section id='form' className='contact-scroll'>
+                    <div className="form-wrapper">
+                        <h1>Skontaktuj się z nami
+                            <div className="decoration"></div></h1>
+                        <p>formularz kontaktowy</p>
+                        <form onSubmit={this.handleSubmit} noValidate>
 
-                        <input className='message'
-                               type="text"
-                               name='message'
-                               value={this.state.message}
-                               onChange={this.handleChange}/>
-                        {this.state.errors.message ? <span>{this.messages.message_incorrect}</span> : null}
+                            <div className="input-wrapper">
+                                <label htmlFor="user">
+                                    <input type="text"
+                                           id='user'
+                                           value={this.state.username}
+                                           name='username'
+                                           onChange={this.handleChange}/>
+                                    {this.state.errors.username ?
+                                        <span>{this.messages.username_incorrect}</span> : null}
+                                </label>
+                                <label htmlFor="email">
+                                    <input type="email"
+                                           value={this.state.email}
+                                           name='email'
+                                           onChange={this.handleChange}/>
+                                    {this.state.errors.email ? <span>{this.messages.email_incorrect}</span> : null}
+                                </label>
+                            </div>
 
-                        {/*<input className='button' type="submit" value="Wyślij"/>*/}
-                        <button className='button'>Wyślij</button>
+                            <input className='message'
+                                   type="text"
+                                   name='message'
+                                   value={this.state.message}
+                                   onChange={this.handleChange}/>
+                            {this.state.errors.message ? <span>{this.messages.message_incorrect}</span> : null}
 
-                    </form>
-                </div>
-            </section>
+                            {/*<input className='button' type="submit" value="Wyślij"/>*/}
+                            <button className='button'>Wyślij</button>
 
-        );
+                        </form>
+                    </div>
+                </section>
+
+            );
+        } else {
+            return <ThanksForForm/>
+        }
     }
 }
 

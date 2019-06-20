@@ -22,7 +22,7 @@ class MainPage extends Component {
                 <About/>
                 <Help/>
                 <ContactForm/>
-                <ThanksForForm/>
+                {/*<ThanksForForm/>*/}
 
                 {/*<Login/>*/}
                 <ScrollTopButton/>

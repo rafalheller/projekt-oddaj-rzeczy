@@ -2,7 +2,7 @@ import React from 'react';
 
 const ThanksForForm = () => {
     return (
-        <div id='thanks' className='thanks-section contact-scroll'>
+        <div id='thanks' className='thanks-section'>
 
             <p className='thanks-text'>Dziękujemy za przesłanie formularza
                 Na maila prześlemy wszelkie
