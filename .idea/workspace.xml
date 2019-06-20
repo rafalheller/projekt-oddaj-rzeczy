@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="302b49bf-6e07-4792-8205-81abd55eebaa" name="Default Changelist" comment="add section form (view)">
-      <change beforePath="$PROJECT_DIR$/src/components/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Help.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Help.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login&amp;RegisterForms/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login&amp;RegisterForms/RegisterForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_Register.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_Register.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52196574">
+    <splitter split-orientation="horizontal" split-proportion="0.75743496">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -44,8 +41,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Login&amp;RegisterForms/RegisterForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="246">
-                  <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+                <state relative-caret-position="153">
+                  <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
@@ -134,8 +131,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/ContactForm.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1717">
-                  <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+                <state relative-caret-position="119">
+                  <caret line="118" column="43" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="115" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -369,7 +366,7 @@
       <workItem from="1560688487366" duration="9694000" />
       <workItem from="1560721250992" duration="11503000" />
       <workItem from="1560891767522" duration="7105000" />
-      <workItem from="1561027573600" duration="26319000" />
+      <workItem from="1561027573600" duration="27677000" />
     </task>
     <task id="LOCAL-00001" summary="create header on desktop">
       <created>1560119384266</created>
@@ -396,7 +393,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191432000" />
+    <option name="totallyTimeSpent" value="192790000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -411,7 +408,7 @@
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19880864" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19880864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -423,7 +420,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329806" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329806" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4995809" weight="0.30864197" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4995809" visible="true" weight="0.30864197" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50041914" side_tool="true" weight="0.25203252" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.329806" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -868,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ContactForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="118" column="43" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="115" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -878,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Login&amp;RegisterForms/RegisterForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
+        <state relative-caret-position="153">
+          <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
         </state>
       </provider>
     </entry>
