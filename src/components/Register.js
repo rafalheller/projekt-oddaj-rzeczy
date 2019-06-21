@@ -3,6 +3,7 @@ import hands from "../images/28.png";
 import arrow from "../images/016.png";
 import eyes from "../images/039.png";
 import courier from "../images/58.png";
+import {NavLink} from "react-router-dom";
 
 class Register extends Component {
     render() {
@@ -32,7 +33,7 @@ class Register extends Component {
                             sprzęt i inne</p></div>
                 </div>
 
-                <button>załóż konto</button>
+                <div><NavLink to='/register' className='button'>załóż konto</NavLink></div>
             </main>
         );
     }

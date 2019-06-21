@@ -1,18 +1,24 @@
 import React, {Component} from 'react';
+import {NavLink, Route} from "react-router-dom";
 
 class Buttons extends Component {
     render() {
         return (
+
+
             <div className="buttons">
-                <div className='big-button'>
-                    <p>oddaj</p>
-                    <p>rzeczy</p>
-                </div>
-                <div className='big-button'>
+
+                    <NavLink to='/login' className='big-button'>
+                        <p>oddaj</p>
+                        <p>rzeczy</p>
+                    </NavLink>
+
+                <NavLink to='/login' className='big-button'>
                     <p>zorganizuj</p>
                     <p>zbiórkę</p>
-                </div>
+                </NavLink>
             </div>
+
         );
     }
 }

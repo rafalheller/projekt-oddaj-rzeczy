@@ -1,75 +1,124 @@
 import React, {Component} from 'react';
-import Pagination from "react-js-pagination";
+import HelpBtn from "./HelpBtn";
+import {Pagination} from 'react-bootstrap';
+
+const style = {
+    fontWeight: 900
+}
 
 class Help extends Component {
+    state = {
+        data: [],
+        organizations: 'foundations',
+        active: false
+    }
+    showOrganizations = () => {
+        this.setState({
+            organizations: 'organizations',
+            active: !this.state.active
+        })
+    }
+    showFoundations = () => {
+        this.setState({
+            organizations: 'foundations',
+            active: !this.state.active
+
+        })
+    }
+    showLocalHelp = () => {
+
+        this.setState({
+
+            organizations: 'localHelp',
+            active: !this.state.active
+
+        })
+    }
+
 
     getData = () => {
-        fetch('https://jsonplaceholder.typicode.com/todos')
+        console.log("działa")
+        fetch(`http://localhost:5555/${this.state.organizations}`)
             .then(response => response.json())
-            .then(json => console.log(json[7].title))
-            .then(json=> <div>{json}</div>)
+            .then(json => this.setState({
+                data: json,
+            }))
     }
+
 
     componentDidMount() {
-        this.getData()
+        this.getData();
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('update');
+
+    }
+
+
     render() {
+        const foundationsList = this.state.data.map(item => (<li key={item.id} className='foundation-item'>
+            <h3 className="foundation-name"><span style={style}>Fundacja:</span> {item.name}</h3>
+            <p style={style}>Cel i misja: {item.description}</p>
+            <p>{item.items.join(', ')}</p>
+        </li>))
 
 
-        return (
-            <section id="menu-help" className='foundations-scroll'>
-                <div className="menu-title">
-                    <h2 onClick={this.getData}>Komu pomagamy?
-                        <div className="decoration"></div>
-                    </h2>
-                    <div className="buttons">
-                        <div className="button">
-                            <p>Fundacjom</p>
-                        </div>
-                        <div className="button">
-                            <p>Organizacjom pozarządowym</p>
-                        </div>
-                        <div className="button">
-                            <p>Lokalnym zbiórkom</p>
-                        </div>
-                    </div>
+        return <section id="menu-help" className='foundations-scroll'>
+            <div className="menu-title">
+                <h2>Komu pomagamy?
+                    <div className="decoration"></div>
+                </h2>
 
 
-                    <p className='description'>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z
-                        którymi współpracujemy.
-                        Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
-
-                    </p>
+                <div className="buttons">
+                    <HelpBtn
+                        style={this.state.active ? {fontWeight: 900} : {fontWeight: 300}}
+                        onClick={this.showFoundations}
+                        name={'Fundacjom'}
+                        profil={'foundations'}
+                    />
+                    <HelpBtn
+                        style={this.state.active ? {fontWeight: 900} : {fontWeight: 300}}
+                        onClick={this.showOrganizations}
+                        name={'Organizacjom pozarządowym'}
+                        profil={'organizations'}/>
+                    <HelpBtn
+                        style={this.state.active ? {fontWeight: 900} : {fontWeight: 300}}
+                        onClick={this.showLocalHelp}
+                        name={'Lokalnym zbiórkom'}
+                        profil={'localHelp'}/>
                 </div>
+                <p className='description'>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z
+                    którymi współpracujemy.
+                    Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
+                </p>
+            </div>
 
-                <ul className='foundation-list '>
+            <ul className='foundation-list '>
+                {foundationsList}
+            </ul>
 
-                    <li className='foundation-item'>
-                        <h3 name="dbam o zdrowie" className="foundation-name">Fundacja: Lorem ipsum.</h3>
-                        <p>Cel i misja: Lorem ipsum dolor sit amet.</p>
-                        <p>ubrania, zabawki lsklsklskls</p>
-                    </li>
-                    <li className='foundation-item'><h3 name="dbam o zdrowie" className="foundation-name">Fundacja:
-                        Lorem ipsum.</h3>
-                        <p>Cel i misja: Lorem ipsum dolor sit amet.</p>
-
-                        <p>ubrania, zabawki lsklsklskls</p></li>
-                    <li className='foundation-item'><h3 name="dbam o zdrowie" className="foundation-name">Fundacja:
-                        Lorem ipsum.</h3>
-                        <p>Cel i misja: Lorem ipsum dolor sit amet.</p>
-                        <p>ubrania, zabawki lsklsklskls</p></li>
-                </ul>
-
-                <div className="pagination">
-                    <div className="page">1</div>
-                    <div className="page">2</div>
-                    <div className="page">3</div>
-                </div>
+            <div className="pagination">
+                <div className="page">1</div>
+                <div className="page">2</div>
+                <div className="page">3</div>
+            </div>
 
 
-            </section>
-        );
+            {/*<Pagination*/}
+            {/*    className={'ok'}*/}
+            {/*    bsSize="medium"*/}
+            {/*    items={10}*/}
+            {/*    activePage={1}>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">Previous</a></li>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">1</a></li>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">2</a></li>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">3</a></li>*/}
+            {/*    <li className="page-item"><a className="page-link" href="#">Next</a></li></Pagination>*/}
+
+
+        </section>;
     }
 }
 

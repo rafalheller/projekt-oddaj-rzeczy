@@ -1,30 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
+import Stat from "./Stat";
 
-class Stats extends Component {
-    render() {
+const randNum1 = Math.floor(Math.random() * 17)
+const randNum2 = Math.floor(Math.random() * 10)
+const randNum3 = Math.floor(Math.random() * 21)
+
+const Stats = () => {
+    {
         return (
             <section id='stats'>
-                <div className='column'>
-                    <h2 className="counter">10</h2>
-                    <h3>Oddanych worków</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt ex labore
-                        officia
-                        quos, suscipit.</p>
-                </div>
-                <div className='column'>
-                    <h2 className="counter">5</h2>
-                    <h3>Oddanych worków</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt ex labore
-                        officia
-                        quos, suscipit.</p>
-                </div>
-                <div className='column'>
-                    <h2 className="counter">3</h2>
-                    <h3>Oddanych worków</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt ex labore
-                        officia
-                        quos, suscipit.</p>
-                </div>
+                <Stat counter={randNum1} title="Oddanych worków"/>
+                <Stat counter={randNum2} title="Odebranch worków"/>
+                <Stat counter={randNum3} title="Dostarczonych worków"/>
             </section>
         );
     }

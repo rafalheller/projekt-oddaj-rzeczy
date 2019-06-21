@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import {NavLink} from "react-router-dom";
 
-class RegisterForm extends Component {
+class Login extends Component {
     render() {
         return (
             <form id="login">
-                <h1>Załóż konto</h1>
+                <h1>Zaloguj się</h1>
                 <div className="decoration"/>
 
                 <p>Email</p>
@@ -16,11 +17,13 @@ class RegisterForm extends Component {
                 <br/>
                 <div className='buttons-container'>
                     <input type="submit" value='Zaloguj się'/>
-                    <input type="submit" value='Załóż konto'/>
+                    <NavLink to='/register'>Załóż konto</NavLink>
                 </div>
             </form>
+
+
         );
     }
 }
 
-export default RegisterForm;
+export default Login;

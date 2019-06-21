@@ -118,3 +118,18 @@
     }
   }
 }
+.ok {
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.page-item {
+  .page-link{
+    display: inline-block;
+    color: red;
+    margin: 30px;
+  }
+}
